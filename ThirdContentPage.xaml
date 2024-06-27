@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.ThirdContentPage"
+             Title="ThirdContentPage">
+    <ContentPage.Resources>
+        <x:Array x:Key="StringArray" Type="{x:Type x:String}">
+            <x:String>Guayaquil</x:String>
+            <x:String>Quito</x:String>
+            <x:String>Cuenca</x:String>
+        </x:Array>
+    </ContentPage.Resources>
+    
+    <HorizontalStackLayout>
+        <Label Text="Texto 1"/>
+        <VerticalStackLayout>
+            <Label Text="Texto 3"/>
+            <Entry Placeholder="Escribe un texto aquí"/>
+            <Switch IsToggled="false"/>
+            <HorizontalStackLayout>
+                <Label Text="Texto 4"/>
+                <Picker Title="Ciudad" ItemsSource="">
+                    
+                </Picker>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </HorizontalStackLayout>
+</ContentPage>

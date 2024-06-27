@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage1"
+             Title="NewPage1"
+             BackgroundColor="Beige">
+    
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label 
+            Text="Clase 3 .NET MAUI!"
+            Style="{StaticResource Headline}"
+            BackgroundColor="DarkBlue"
+            TextColor="White"
+            TextTransform="Uppercase"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="Large" />
+        <Button x:Name="btn1" Text="Cambiar" HorizontalOptions="CenterAndExpand" Pressed="btn1_Pressed"/>
+        <Label x:Name="lblNombre" IsVisible="True" Text="Texto 1" TextColor="Black" />
+        <Label x:Name="lblNombre2" IsVisible="True" Text="Texto 2" TextColor="Black" />
+
+    </VerticalStackLayout>
+</ContentPage>
